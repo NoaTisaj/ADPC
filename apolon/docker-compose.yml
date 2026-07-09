@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:18
+    container_name: apolon-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: apolon
+      POSTGRES_PASSWORD: apolon_dev_pass
+      POSTGRES_DB: apolon
+    ports:
+      - "5432:5432"
+    volumes:
+      - apolon_pgdata:/var/lib/postgresql
+
+volumes:
+  apolon_pgdata:
