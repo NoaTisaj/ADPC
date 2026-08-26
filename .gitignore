@@ -4,3 +4,9 @@ obj/
 .DS_Store
 __pycache__/
 .venv/
+
+# Dionis audio test files
+dionis/audio/
+
+# JetBrains IDE settings
+.idea/
